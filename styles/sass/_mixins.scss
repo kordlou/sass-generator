@@ -1,0 +1,36 @@
+@import "functions";
+
+@mixin flex {
+    display: -webkit-box;  // OLD - iOS 6-, Safari 3.1-6, BB7
+    display: -ms-flexbox;  // TWEENER - IE 10
+    display: -webkit-flex; // NEW - Safari 6.1+. iOS 7.1+, BB10
+    display: flex;         // NEW, Spec - Firefox, Chrome, Opera
+}
+
+@mixin border($side , $value) {
+    @if $side == 'all' {
+        border: $value;
+    } @else {
+        border-#{$side}: $value;
+    }
+}
+
+@mixin MediaQuery($screen) {
+    @if $screen == sm {
+        @media only screen and (min-width : $sm) { @content; }
+    } @else if $screen == m {
+        @media only screen and (min-width : $m) { @content; }
+    } @else if $screen == lg {
+        @media only screen and (min-width : $lg) { @content; }
+    } @else if $screen == xl {
+        @media only screen and (min-width : $xl) { @content; }
+    }
+}
+
+@mixin PaddingOrMargin($type, $index) {
+    @if $type == 'p' {
+        padding : getSize($index)
+    } @else if $type == 'm' {
+        margin: getSize($index)
+    }
+}

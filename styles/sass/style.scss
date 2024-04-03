@@ -1,0 +1,23 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "global";
+@import "card";
+
+
+$type : 'p','m';
+@each $t in $type {
+    @for $i from 1 to 11 {
+        $sides : 't', 'b' , 'r' , 'l';
+
+        @each $side in $sides {
+            .#{$t}#{$side}-#{$i} {
+                @include PaddingOrMargin($t, $i)
+            }
+        }
+
+        .#{$t}-#{$i} {
+            @include PaddingOrMargin($t, $i)
+        }
+    }
+}

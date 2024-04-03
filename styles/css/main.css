@@ -1,0 +1,511 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.conatiner {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+.card .card-footer, .card .card-header {
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+@media only screen and (min-width: 580px) {
+  .card {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .card {
+    flex-direction: column;
+  }
+}
+.card .card-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card .card-body {
+  padding: 1.25rem;
+}
+.card .card-body .card-title {
+  margin-bottom: 0.95rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.card .card-footer {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+@media only screen and (min-width: 780px) {
+  .card .card-footer {
+    border: 0;
+  }
+}
+
+.pt-1 {
+  padding: 0.25rem;
+}
+
+.pb-1 {
+  padding: 0.25rem;
+}
+
+.pr-1 {
+  padding: 0.25rem;
+}
+
+.pl-1 {
+  padding: 0.25rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.pt-2 {
+  padding: 0.5rem;
+}
+
+.pb-2 {
+  padding: 0.5rem;
+}
+
+.pr-2 {
+  padding: 0.5rem;
+}
+
+.pl-2 {
+  padding: 0.5rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.pt-3 {
+  padding: 0.75rem;
+}
+
+.pb-3 {
+  padding: 0.75rem;
+}
+
+.pr-3 {
+  padding: 0.75rem;
+}
+
+.pl-3 {
+  padding: 0.75rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.pt-4 {
+  padding: 1rem;
+}
+
+.pb-4 {
+  padding: 1rem;
+}
+
+.pr-4 {
+  padding: 1rem;
+}
+
+.pl-4 {
+  padding: 1rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.pt-5 {
+  padding: 1.25rem;
+}
+
+.pb-5 {
+  padding: 1.25rem;
+}
+
+.pr-5 {
+  padding: 1.25rem;
+}
+
+.pl-5 {
+  padding: 1.25rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.pt-6 {
+  padding: 1.5rem;
+}
+
+.pb-6 {
+  padding: 1.5rem;
+}
+
+.pr-6 {
+  padding: 1.5rem;
+}
+
+.pl-6 {
+  padding: 1.5rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.pt-7 {
+  padding: 1.75rem;
+}
+
+.pb-7 {
+  padding: 1.75rem;
+}
+
+.pr-7 {
+  padding: 1.75rem;
+}
+
+.pl-7 {
+  padding: 1.75rem;
+}
+
+.p-7 {
+  padding: 1.75rem;
+}
+
+.pt-8 {
+  padding: 2rem;
+}
+
+.pb-8 {
+  padding: 2rem;
+}
+
+.pr-8 {
+  padding: 2rem;
+}
+
+.pl-8 {
+  padding: 2rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.pt-9 {
+  padding: 2.25rem;
+}
+
+.pb-9 {
+  padding: 2.25rem;
+}
+
+.pr-9 {
+  padding: 2.25rem;
+}
+
+.pl-9 {
+  padding: 2.25rem;
+}
+
+.p-9 {
+  padding: 2.25rem;
+}
+
+.pt-10 {
+  padding: 2.5rem;
+}
+
+.pb-10 {
+  padding: 2.5rem;
+}
+
+.pr-10 {
+  padding: 2.5rem;
+}
+
+.pl-10 {
+  padding: 2.5rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.mt-1 {
+  margin: 0.25rem;
+}
+
+.mb-1 {
+  margin: 0.25rem;
+}
+
+.mr-1 {
+  margin: 0.25rem;
+}
+
+.ml-1 {
+  margin: 0.25rem;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.mt-2 {
+  margin: 0.5rem;
+}
+
+.mb-2 {
+  margin: 0.5rem;
+}
+
+.mr-2 {
+  margin: 0.5rem;
+}
+
+.ml-2 {
+  margin: 0.5rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.mt-3 {
+  margin: 0.75rem;
+}
+
+.mb-3 {
+  margin: 0.75rem;
+}
+
+.mr-3 {
+  margin: 0.75rem;
+}
+
+.ml-3 {
+  margin: 0.75rem;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
+.mt-4 {
+  margin: 1rem;
+}
+
+.mb-4 {
+  margin: 1rem;
+}
+
+.mr-4 {
+  margin: 1rem;
+}
+
+.ml-4 {
+  margin: 1rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.mt-5 {
+  margin: 1.25rem;
+}
+
+.mb-5 {
+  margin: 1.25rem;
+}
+
+.mr-5 {
+  margin: 1.25rem;
+}
+
+.ml-5 {
+  margin: 1.25rem;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
+.mt-6 {
+  margin: 1.5rem;
+}
+
+.mb-6 {
+  margin: 1.5rem;
+}
+
+.mr-6 {
+  margin: 1.5rem;
+}
+
+.ml-6 {
+  margin: 1.5rem;
+}
+
+.m-6 {
+  margin: 1.5rem;
+}
+
+.mt-7 {
+  margin: 1.75rem;
+}
+
+.mb-7 {
+  margin: 1.75rem;
+}
+
+.mr-7 {
+  margin: 1.75rem;
+}
+
+.ml-7 {
+  margin: 1.75rem;
+}
+
+.m-7 {
+  margin: 1.75rem;
+}
+
+.mt-8 {
+  margin: 2rem;
+}
+
+.mb-8 {
+  margin: 2rem;
+}
+
+.mr-8 {
+  margin: 2rem;
+}
+
+.ml-8 {
+  margin: 2rem;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
+.mt-9 {
+  margin: 2.25rem;
+}
+
+.mb-9 {
+  margin: 2.25rem;
+}
+
+.mr-9 {
+  margin: 2.25rem;
+}
+
+.ml-9 {
+  margin: 2.25rem;
+}
+
+.m-9 {
+  margin: 2.25rem;
+}
+
+.mt-10 {
+  margin: 2.5rem;
+}
+
+.mb-10 {
+  margin: 2.5rem;
+}
+
+.mr-10 {
+  margin: 2.5rem;
+}
+
+.ml-10 {
+  margin: 2.5rem;
+}
+
+.m-10 {
+  margin: 2.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */

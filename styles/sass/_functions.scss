@@ -1,0 +1,4 @@
+
+@function getSize($index){
+  @return 0.25rem * $index;
+}
